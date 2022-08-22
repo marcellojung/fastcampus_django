@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     'django_extensions',
     # 'debug_toolbar',
     # 'mytest',
-    # 'book',
+    'book',
     # 'django.contrib.sites',
     # 'allauth',
     # 'allauth.account',
