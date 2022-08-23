@@ -26,9 +26,10 @@ urlpatterns = [
     # path('bookmark/', include('bookmark.urls')),
     path('article/', include('article.urls')),
     # path('mytest/', include('mytest.urls')),
-    # path('book/', include('book.urls')),
+    path('book/', include('book.urls')),
     path('accounts/', include('accounts.urls')),
     # path('accounts/', include('allauth.urls')),
+    # path('',)
 ]
 
 
