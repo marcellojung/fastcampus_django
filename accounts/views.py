@@ -7,9 +7,17 @@ from django.urls import reverse_lazy
 from .forms import SignupForm
 
 
-def signup(request):
-    pass
-
+def signup(request): # 회원가입 구현 
+    if request.method =='POST':
+        pass
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            
+            return redirect(settings.LOGIN_URL)
+    else:
+        form = UserCreationForm()
+    return render(request,'accounts/signup_form.html',{'form':form})
 def profile(request):
     return render(request, 'accounts/profile.html')
 

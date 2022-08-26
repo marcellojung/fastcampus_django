@@ -7,7 +7,7 @@
             {% for book in book_list%}
             <li>
                 {{book.title}}/{{book.author}} /{{book.publisher}}
-                <a href="{% url 'book:edit' book.id %}">[수정]</a>
+                {% comment %} <a href="{% url 'book:edit' book.id %}">[수정]</a> {% endcomment %}
             </li>
             {% endfor %}
         </ul>

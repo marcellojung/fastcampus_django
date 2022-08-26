@@ -13,3 +13,8 @@ class Book(models.Model):
     author = models.CharField(max_length=50)
     publisher = models.CharField(max_length=50)
     publication_date = models.DateTimeField(auto_now_add=True)
+    ip = models.CharField(max_length=15)
+
+    def get_absolute_url(self):
+        return reverse('book:list')
+    
